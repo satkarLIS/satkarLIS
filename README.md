@@ -87,6 +87,12 @@ Locate the certificates generated and move them to the Keys Folder.
 
 This project assumes the presence of SSL certificates for HTTPS. Make sure to provide the correct paths to your SSL certificate and private key files in the `main.js` file.
 
+## Usage
+```bash
+docker-compose up --build
+```
+
+Once the Docker containers are up and running, the server will be accessible. You can access the backend services through https://localhost/<https_port>
 
    
 
