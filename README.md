@@ -1,6 +1,6 @@
 # YCOus Backend
 
-This repository contains the backend code for the YCOus website. It includes routes for managing a captcha server and handling the GET/POST requests of the YCOus frontend website. The main file, `main.js`, is the entry point for the backend server.
+This repository contains the backend code for the YCOus website. It includes routes for managing the captcha server and handling the GET/POST requests of the YCOus frontend website. The main file, `main.js`, is the entry point for the backend server.
 
 ## Prerequisites
 
@@ -12,6 +12,7 @@ Make sure you have the following installed on your machine:
 - MongoDB (for database connectivity)
 - .env file with necessary variables (See "Configuration" section)
 - Docker
+- Domain name( for generating SSL certificates using Certbot)
 
 ## Installation
 
@@ -50,4 +51,42 @@ EOF
 echo "Content has been written to $output_file."
 ```
 
-Generate the 
+Generate the SSL certificates using the following command :
+
+ ```bash
+ sudo certbot certonly --standalone -d yourdomain.com
+```
+Locate the certificates generated and move them to the Keys Folder.
+
+## Routes
+
+- **GET /**
+  - Redirects to the YCOus frontend index page.
+
+- **POST /send**
+  - Handles the form submission for sending emails. Requires the following parameters:
+    - firstname
+    - lastname
+    - phonenumber
+    - email
+    - message
+
+- **POST /get-captcha**
+  - Generates a captcha image and provides the necessary details. No parameters required.
+
+- **POST /is-human**
+  - Verifies if the provided captcha answer is correct. Requires the following parameters:
+    - uuid
+    - answer
+
+- **POST /is-verified**
+  - Checks if the provided captcha UUID is verified. Requires the following parameter:
+    - uuid
+
+## SSL Certificates
+
+This project assumes the presence of SSL certificates for HTTPS. Make sure to provide the correct paths to your SSL certificate and private key files in the `main.js` file.
+
+
+   
+
