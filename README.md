@@ -88,7 +88,4 @@ Locate the certificates generated and move them to the Keys Folder.
 docker-compose up --build
 ```
 
-Once the Docker containers are up and running, the server will be accessible. You can access the backend services through localhost:<https_port>
-
-   
-
+Once the Docker containers are up and running, the server will be accessible. You can access the backend services through localhost:<https_port> or the server IP/DNS if using EC2.
