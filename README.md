@@ -98,7 +98,7 @@ Once the Docker containers are up and running, you can access the backend servic
       
    2. Push the docker image from local machine
       ```bash
-     docker push IMAGE_NAME :[TAG]
+   docker push IMAGE_NAME :[TAG]
      ```
      
    3. On the EC2 server pull the image
