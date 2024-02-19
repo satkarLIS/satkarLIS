@@ -93,17 +93,21 @@ docker-compose up --build
 Once the Docker containers are up and running, you can access the backend services through localhost:<https_port> .
 
 2. On AWS EC2 server:
+   
    - Login to docker using credentials on the EC2 web server as well as .
-   - Push the docker image from local machine ```bash
+   - Push the docker image from local machine
+      ```bash
      docker push IMAGE_NAME :[TAG]
      ```
-   - On the EC2 server pull the image ```bash
+   - On the EC2 server pull the image
+      ```bash
      docker pull IMAGE_NAME :[TAG]
      ```
-   - Copy your compose.yml and .env file to a Folder and run the following commands inside the same folder:  ```bash
-docker-compose build
-docker-compose up -d
-```
+   - Copy your compose.yml and .env file to a Folder and run the following commands inside the same folder:
+      ```bash
+      docker-compose build
+      docker-compose up -d
+      ```
 Once the container is running , you can access it using your server IP address or the DNS of the server followed by ":https_port".
      
      
