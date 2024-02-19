@@ -87,9 +87,9 @@ Locate the certificates generated and move them to the Keys Folder.
 
 1. **On Local machine:**
    
- ```bash
-   docker-compose up --build
- ```
+  ```bash
+     docker-compose up --build
+  ```
 Once the Docker containers are up and running, you can access the backend services through localhost:<https_port> .
 
 2. **On AWS EC2 server:**
