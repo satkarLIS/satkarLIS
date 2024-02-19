@@ -94,16 +94,16 @@ Once the Docker containers are up and running, you can access the backend servic
 
 2. **On AWS EC2 server:**
    
-   * Login to docker using credentials on the EC2 web server as well as the local environment .
-   * Push the docker image from local machine
+   1. Login to docker using credentials on the EC2 web server as well as the local environment .
+   2. Push the docker image from local machine
       ```bash
      docker push IMAGE_NAME :[TAG]
      ```
-   * On the EC2 server pull the image
+   3. On the EC2 server pull the image
       ```bash
      docker pull IMAGE_NAME :[TAG]
      ```
-   * Copy your compose.yml and .env file to a Folder and run the following commands inside the same folder:
+   4. Copy your compose.yml and .env file to a Folder and run the following commands inside the same folder:
       ```bash
       docker-compose build
       docker-compose up -d
