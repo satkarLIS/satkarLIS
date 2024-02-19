@@ -112,7 +112,7 @@ Once the Docker containers are up and running, you can access the backend servic
          docker-compose build
          docker-compose up -d
       
-Once the container is running , you can access it using your server IP address or the DNS of the server followed by ":<https_port>".
+Once the containers are running , you can access it using your server IP address or the DNS of the server followed by ":<https_port>"
      
      
      
