@@ -1,6 +1,6 @@
 # YCOus Backend
 
-This repository contains the backend code for the YCOus website. It includes routes for managing the captcha server and handling the GET/POST requests of the YCOus frontend website. The main file, `main.js`, is the entry point for the backend server.
+This document defines the backend for the YCOus website which includes routes for managing the captcha server and handling the GET/POST requests of the YCOus frontend website. The main file, `main.js`, is the entry point for the backend server.
 
 ## Prerequisites
 
