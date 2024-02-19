@@ -6,7 +6,7 @@ https://github.com/DS-Line/YCOus-Backend
 
 ## Prerequisites
 
-Make sure you have the following installed on your machine:
+Make sure you have the following on your machine:
 
 - Linux Server enviroment (preferably using AWS EC2)
 - Node.js
