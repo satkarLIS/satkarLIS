@@ -94,7 +94,7 @@ Once the Docker containers are up and running, you can access the backend servic
 
 2. On AWS EC2 server:
    
-   - Login to docker using credentials on the EC2 web server as well as .
+   - Login to docker using credentials on the EC2 web server as well as the local environment .
    - Push the docker image from local machine
       ```bash
      docker push IMAGE_NAME :[TAG]
@@ -108,7 +108,7 @@ Once the Docker containers are up and running, you can access the backend servic
       docker-compose build
       docker-compose up -d
       ```
-Once the container is running , you can access it using your server IP address or the DNS of the server followed by ":https_port".
+Once the container is running , you can access it using your server IP address or the DNS of the server followed by ":<https_port>".
      
      
      
